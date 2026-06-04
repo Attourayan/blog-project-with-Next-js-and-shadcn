@@ -16,13 +16,12 @@ const HeroSection = () => {
             className="space-y-6"
           >
             <h2 className="text-4xl  md:text-6xl lg:text-7xl font-serif font-bold">
-              Welcome to Our{" "}
+              Welcome to Our
               <span className="font-sans  text-primary  italic ">
-                {" "}
-                Website{" "}
-              </span>{" "}
+                Website
+              </span>
             </h2>
-            <p className="text-xl md:2xl text-muted-foreground max-w-2xl text-justify">
+            <p className="text-xl md:2xl text-muted-foreground max-w-2xl lg:text-justify">
               Your journey starts here. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit. Dolore magni aspernatur dignissimos soluta quas,
               nemo fuga recusandae consectetur, beatae nulla quam eaque? Minus
@@ -43,9 +42,9 @@ const HeroSection = () => {
               className="flex justify-center"
             >
               <Button className="  p-6 text-xl capitalize text-foreground group">
-                {" "}
-                read the latest post{" "}
-                <ArrowRight className=" transition-transform   group-hover:translate-x-3 group-hover:font-bolder" />{" "}
+                
+                read the latest post
+                <ArrowRight className=" transition-transform   group-hover:translate-x-3 group-hover:font-bolder" />
               </Button>
             </motion.div>
           </motion.div>

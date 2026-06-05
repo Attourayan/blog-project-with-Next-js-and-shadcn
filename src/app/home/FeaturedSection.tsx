@@ -1,18 +1,17 @@
+ 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { PostFeatured } from "@/lib/data";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import * as motion from "motion/react-client";
 import Image from "next/image";
+import { Section } from "@/components/section";
 
 const FeaturedSection = () => {
   const posts = PostFeatured;
 
-  console.log(posts);
-
   return (
-    <section className="  min-h-[90vh] flex justify-center  px-3 sm:px-6 lg:px-8 overflow-hidden    text-center">
-      <div className="max-w-7xl mx-auto  ">
+    <Section> 
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .9 }} className="space-y-6">
          <h1 className="text-2xl md:text-3xl lg:text-4xl capitalize pb-6 font-serif font-bold">
           {" "}
@@ -58,9 +57,9 @@ const FeaturedSection = () => {
 
                   <div className="text-2xl text-foreground font-bold font-serif capitalize group-hover:text-primary transition-colors duration-200"> {post.title}</div>
 
-                  <div className="text-muted-foreground line-clamp-3">{post.except}</div>
+                  <div className="text-muted-foreground line-clamp-1">{post.except}</div>
 
-                  <span className="group/more  text-primary capitalize font-bold  cursor-pointer flex items-center gap-2 p-4">
+                  <span className="group/more text-md  text-primary capitalize font-bold  cursor-pointer flex items-center gap-2 p-4  group-hover:underline transition-all duration-300 self-start">
                     read more <ArrowRight className="group-hover/more:translate-x-2  transition-transform duration-300" />
                   </span>
                 </CardContent>
@@ -69,8 +68,7 @@ const FeaturedSection = () => {
             );
           })}
         </div>
-      </div>
-    </section>
+</Section>
   );
 };
 export default FeaturedSection;

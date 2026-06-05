@@ -2,6 +2,7 @@
 import HeroSection from "./home/HeroSection";
 import   FeaturedSection   from "./home/FeaturedSection";
 import { CategoriesSection } from "./home/CategoriesSection";
+import { QuatesSection } from "./home/QuatesSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <HeroSection/>
     <FeaturedSection/>
     <CategoriesSection/>
+    <QuatesSection/>
     </main>
   );
 }

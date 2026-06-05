@@ -1,3 +1,4 @@
+import { Section } from "@/components/section";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import * as motion from "motion/react-client";
@@ -5,15 +6,14 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="  min-h-[90vh] flex justify-center  px-3 sm:px-6 lg:px-8 overflow-hidden    text-center">
-      <div className="max-w-7xl mx-auto  ">
+    <Section>
         <div className="grid lg:grid-cols-2 gap-12  items-center  ">
           {/* left content  */}
           <motion.div
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-12"
           >
             <h2 className="text-4xl  md:text-6xl lg:text-7xl font-serif font-bold">
               Welcome to Our
@@ -57,13 +57,13 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex justify-center relative "
           >
-            <div className="w-80  h-80 bg-gradient-to-br from-primary/20 to-secondary/20 absolute  rounded-full -top-10 -right-10 blur-3xl opacity-50 "> </div>
+            <div className="w-80  h-60 bg-gradient-to-br from-primary/20 to-secondary/20 absolute  rounded-full -top-10 -right-10 blur-3xl opacity-50 "> </div>
               <div className="w-96 h-96 rounded-2xl bg-gradient-to-tl from-secondary/30 to-primary/30   transform rotate-6 shadow-2xl"></div>
            
           </motion.div>
         </div>
-      </div>
-    </section>
+     
+    </Section>
   );
 };
 

@@ -47,15 +47,15 @@ export const CategoriesSection = () => {
                 <CardHeader>
                   <div
                     dangerouslySetInnerHTML={{ __html: category.icon }}
-                    className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300 mx-auto font-bold text-3xl"
+                    className="w-8 h-8 text-primary  group-hover:text-foreground group-hover:scale-110 transition-transform duration-300 mx-auto font-bold text-3xl"
                   />
                 </CardHeader>
 
                 <CardContent className="flex flex-col justify-center items-center gap-4">
-                  <div className="font-sans text-lg  group-hover:text-primary transition-colors duration-300">
+                  <div className="font-sans text-lg text-primary  group-hover:text-foreground transition-colors duration-300">
                     {category.name}{" "}
                   </div>
-                  <Badge className="rounded-sm  group-hover:bg-foreground group-hover:text-primary transition-colors duration-200">
+                  <Badge className="rounded-sm  group-hover:bg-foreground group-hover:text-secondary dark:group-hover:text-primary transition-colors duration-200">
                     {" "}
                     {category.count} Posts{" "}
                   </Badge>

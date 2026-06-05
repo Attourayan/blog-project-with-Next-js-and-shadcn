@@ -42,7 +42,6 @@ const FeaturedSection = () => {
                     className="w-full h-auto object-cover group-hover:scale-110  transition-transform duration-300"
                   />
                   <Badge
-                    
                     className="absolute top-3 left-3"
                   >
                     {post.category}

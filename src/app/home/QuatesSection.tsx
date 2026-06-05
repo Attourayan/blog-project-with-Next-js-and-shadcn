@@ -17,12 +17,13 @@ export const QuatesSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="flex flex-col justify-center items-center gap-8 text-primary  ">
+        <div className="flex flex-col justify-center items-center gap-4 text-primary  ">
           <Quote size={35} />
-          <blockquote className="text-xl font-sans italic   leading-relaxed">
+          <blockquote className="text-xl font-sans italic font-medium text-muted-foreground
+            leading-relaxed">
             "{randomQuote.text}"
           </blockquote>
-          <cite className="font-serif text-lg capitalize  ">
+          <cite className="font-serif text-lg capitalize text-muted-foreground ">
             -{randomQuote.author}
           </cite>
         </div>

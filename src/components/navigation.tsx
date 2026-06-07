@@ -1,6 +1,8 @@
 import { navItems } from "@/lib/constants";
 import Link from "next/link";
 import { ThemToggle } from "./themToggle";
+import { Menu } from "lucide-react";
+import MobileNavigation from "./mobileNavigation";
 
 export default function Navigation() {
   return (
@@ -27,6 +29,20 @@ export default function Navigation() {
             { /* button toggle switch them mode  */}
          <ThemToggle/>
           </div>
+
+             {/* Mobile Menu Button */}
+
+             <MobileNavigation/>
+{/*           <div className="sm:hidden">
+            <button
+              type="button"
+              className="text-muted-foreground hover:text-foreground focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary rounded-sm p-1"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >             <Menu />
+                                                                                                                                        </button>
+          </div> */}
+          
         </div>
       </div>
     </nav>

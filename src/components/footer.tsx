@@ -1,6 +1,9 @@
 import { Section } from "./section";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import * as motion from "motion/react-client";
+import { navItems } from "@/lib/constants";
+ 
+
 const socialLinks = [
   { name: "Facebook", icon: <FaFacebook size={20} />, url: "#" },
   { name: "Twitter", icon: <FaTwitter size={20} />, url: "#" },
@@ -8,12 +11,12 @@ const socialLinks = [
   { name: "LinkedIn", icon: <FaLinkedin size={20} />, url: "#" },
 ];
 
-const quickLinks = [
+/* const quickLinks = [
   { name: "Home", url: "#" },
   { name: "About", url: "#" },
   { name: "Services", url: "#" },
   { name: "Contact", url: "#" },
-];
+]; */
 
 const Footer = () => {
   return (
@@ -25,7 +28,8 @@ const Footer = () => {
             className="space-y-4"
             initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+             
           >
             <h3 className="text-2xl font-serif font-medium ">resonance</h3>
             <p>
@@ -49,21 +53,21 @@ const Footer = () => {
 
           {/*     quick links */}
           <motion.div
-            className="px-20 space-y-2"
+            className=" space-y-2 flex flex-col justify-start items-start md:items-center"
             initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           >
             <h3 className="text-2xl font-serif font-medium text-left">
               quick links
             </h3>
             <ul className="mt-2 text-left space-y-2">
-              {quickLinks.map((link) => {
+              {navItems.map((link) => {
                 return (
                   <li key={link.name}>
                     <a
-                      href={link.url}
-                      className="text-primary hover:text-primary/60 transition-colors duration-300"
+                      href={link.href}
+                      className="text-primary/90 hover:text-primary/110 transition-colors duration-300"
                     >
                       {link.name}
                     </a>
@@ -78,7 +82,7 @@ const Footer = () => {
             className="space-y-4"
             initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
             <h3 className="text-2xl font-serif font-medium "> stay updated </h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
@@ -95,8 +99,8 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="border-t border-border/50 p-5">
-            <p className="text-sm">
+        <div className="border-t border-border/50 p-5  ">
+            <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} My Company. All rights reserved.
             </p>
             <p className="text-sm mt-2">Made By AM.</p>

@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**", // Matches all paths under this domain
       },
+      {
+        protocol: "https",
+        hostname: "fonts.googleapis.com", // Replace with your new domain
+        port: "",
+        pathname: "/**", // Matches all paths under this domain
+      }
     ],
   },
 };

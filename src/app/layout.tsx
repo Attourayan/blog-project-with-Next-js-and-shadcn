@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import Footer from "@/components/footer";
+import { BackToTopButton } from "@/components/BackToTopButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
         >
           <Navigation />
           {children}
+           <BackToTopButton />
           <Footer />
         </ThemeProvider>
       </body>

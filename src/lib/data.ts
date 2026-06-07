@@ -1,6 +1,5 @@
-import { a } from "motion/react-client";
-import id from "zod/v4/locales/id.cjs";
-
+ 
+ 
 export const PostFeatured = [
   {id: 1, title: "le titre de post 1", except: "beatae voluptate corporis sed ut doloribus labore, nemo illo,beatae voluptate corporis sed ut doloribus labore, nemo illo",category: "Category 1",date: "2023-01-01", image: "https://picsum.photos/id/139/200/100"},
   {id: 2, title: "le titre de post 2", except: " beatae voluptate corporis sed ut doloribus labore, nemo illo,beatae voluptate corporis sed ut doloribus labore, nemo illo",category: "Category 2",date: "2023-01-02", image: "https://picsum.photos/id/158/200/100"},

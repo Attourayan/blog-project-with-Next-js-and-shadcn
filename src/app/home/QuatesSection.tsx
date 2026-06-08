@@ -9,7 +9,7 @@ const getRandomQuote = () => {
 
 export const QuatesSection = () => {
   const randomQuote = getRandomQuote();
-  console.log(randomQuote);
+ 
   return (
     <Section>
       <motion.div

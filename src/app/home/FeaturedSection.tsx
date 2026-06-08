@@ -11,13 +11,13 @@ const FeaturedSection = () => {
   const posts = PostFeatured;
 
   return (
-    <Section> 
+    <Section className="px-4"> 
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: .9 }} className="space-y-6">
          <h1 className="text-2xl md:text-3xl lg:text-4xl capitalize pb-6 font-serif font-bold">
           {" "}
           featured insights.
         </h1>
-        <p className="text-muted-foreground text-xl  lg:text-justify">
+        <p className="text-muted-foreground text-sm md:text-lg lg:text-justify">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eum,
           beatae voluptate corporis sed ut doloribus labore, nemo illo
           asperiores temporibus expedita, accusamus ipsum mollitia iusto animi

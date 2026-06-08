@@ -5,7 +5,7 @@ import { QuatesSection } from "./home/QuatesSection";
 
 export default function Home() {
   return (
-    <main className="mx-auto  font-sans  min-h-10 flex flex-col items-center justify-center">
+    <main className="mx-auto   font-sans  min-h-10 flex flex-col items-center justify-center">
       <HeroSection />
       <FeaturedSection />
       <CategoriesSection />

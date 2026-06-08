@@ -19,7 +19,7 @@ export const QuatesSection = () => {
       >
         <div className="flex flex-col justify-center items-center gap-4 text-primary  ">
           <Quote size={35} />
-          <blockquote className="text-xl font-sans italic font-medium text-muted-foreground
+          <blockquote className="text-sm md:text-lg font-sans italic font-medium text-muted-foreground
             leading-relaxed">
             "{randomQuote.text}"
           </blockquote>

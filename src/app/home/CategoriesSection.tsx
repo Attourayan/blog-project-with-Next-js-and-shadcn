@@ -7,7 +7,7 @@ import { Section } from "@/components/section";
 
 export const CategoriesSection = () => {
   return (
-    <Section>
+    <Section className="px-4">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export const CategoriesSection = () => {
           {" "}
           explore topics.
         </h1>
-        <p className="text-muted-foreground text-lg ">
+        <p className="text-muted-foreground text-sm md:text-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eum,
           beatae voluptate corporis sed ut doloribus labore, nemo illo
           asperiores temporibus expedita, accusamus ipsum mollitia iusto animi

@@ -7,7 +7,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <Section>
-        <div className="grid lg:grid-cols-2 gap-12  items-center  ">
+        <div className="grid lg:grid-cols-2 gap-12  items-center justify-center  ">
           {/* left content  */}
           <motion.div
             initial={{ opacity: 0, y: 200 }}
@@ -21,7 +21,7 @@ const HeroSection = () => {
                 Website
               </span>
             </h2>
-            <p className="text-xl md:2xl text-muted-foreground max-w-2xl lg:text-justify">
+            <p className="max-w-xl px-2 text-sm  text-muted-foreground md:text-lg lg:text-justify">
               Your journey starts here. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit. Dolore magni aspernatur dignissimos soluta quas,
               nemo fuga recusandae consectetur, beatae nulla quam eaque? Minus
@@ -55,10 +55,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center relative "
+            className="flex justify-center relative py-6"
           >
-            <div className="w-80  h-60 bg-gradient-to-br from-primary/20 to-secondary/20 absolute  rounded-full -top-10 -right-10 blur-3xl opacity-50 "> </div>
-              <div className="w-96 h-96 rounded-2xl bg-gradient-to-tl from-secondary/30 to-primary/30   transform rotate-6 shadow-2xl"></div>
+            <div className="w-70 h-70 md:w-80  md:h-60 bg-gradient-to-br from-primary/20 to-secondary/20 absolute  rounded-full -top-10 -right-10 blur-3xl opacity-50 "> </div>
+              <div className="w-70 h-70 md:w-96 md:h-96 rounded-2xl bg-gradient-to-tl from-secondary/30 to-primary/30   transform rotate-6 shadow-2xl"></div>
            
           </motion.div>
         </div>
